@@ -24,9 +24,13 @@ clean:
 	@echo "Cleaning the project..."
 	@rm -rf bin/$(PROJECT)
 
-run:
-	@echo "Running the project..."
-	@go run $(PROJECT).go
+run-dev:
+	@echo "Running the project on Dev..."
+	@go run ./cmd/
+
+run-prod:
+	@echo "Running the project on Dev..."
+	@go run ./cmd/ -env=production -port=80
 
 test:
 	@echo "Running the tests..."
