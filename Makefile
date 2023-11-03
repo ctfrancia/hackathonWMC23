@@ -1,4 +1,4 @@
-.PHONY: help
+.PHONY: help build clean run test coverage lint fmt vet install uninstall
 
 help:
 	@echo "Usage: make [target]"
